@@ -1,0 +1,8 @@
+curl 'http://kunini.ru/wp-admin/post.php' \
+ -H 'Cookie: wordpress_68bfaf2aeb731eb8e04d9771dc4545a6=Kun%7C1488750555%7C47nquQ92DsBRJrvTh4zq7kAV5lLP3VFLbpcikcgtMZr%7C97cd0ae7a6fa7e525166fee8962911e9e788f7c915ab079675171a8564be85bd; wordpress_logged_in_68bfaf2aeb731eb8e04d9771dc4545a6=Kun%7C1488750555%7C47nquQ92DsBRJrvTh4zq7kAV5lLP3VFLbpcikcgtMZr%7C5a63b8d1fc44d56e17419ecc7074eedbc60034d157c998f7607b50bcb4c40098;' \
+ -H 'Origin: http://kunini.ru' \
+ -H 'Content-Type: application/x-www-form-urlencoded' \
+ -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' \
+ -H 'Cache-Control: max-age=0' \
+ -H 'Referer: http://kunini.ru/wp-admin/post.php?post=84&action=edit' \
+ --data '_wpnonce=1883d8befe&_wp_http_referer=%2Fwp-admin%2Fpost.php%3Fpost%3D84%26action%3Dedit&user_ID=3&action=editpost&originalaction=editpost&post_author=3&post_type=post&original_post_status=publish&post_ID=84&_wp_http_referer=%2Fwp-admin%2Fpost.php%3Fpost%3D84%26action%3Dedit&content=%5Bmasterslider+id%3D%221%22%5D+11'
