@@ -1,5 +1,8 @@
-var Nightmare = require('nightmare');       
-const { WP_USERNAME, WP_PASSWORD } = process.env;
+'use strict';
+
+const Nightmare = require('nightmare');       
+
+const { WP_SITE, WP_USERNAME, WP_PASSWORD } = process.env;
 
 module.exports = function(postId, content) {
     return new Promise(function(resolve, reject){
@@ -10,7 +13,7 @@ module.exports = function(postId, content) {
         });
 
         nightmare
-            .goto(`http://kunini.ru/wp-admin/post.php?post=${postId}&action=edit`)
+            .goto(`${WP_SITE}/wp-admin/post.php?post=${postId}&action=edit`)
             .click('.jetpack-sso-toggle.wpcom')
             .insert('#user_login', WP_USERNAME)
             .insert('#user_pass', WP_PASSWORD)
